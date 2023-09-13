@@ -1,0 +1,16 @@
+[datatheme="light"] {
+  --color-primary: #aeafac;
+}
+
+[datatheme="dark"] {
+  --color-primary: #1e1f1f;
+}
+.dark-mode {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+nav {
+  background-color: var(--color-primary);
+  @apply shadow-black;
+}

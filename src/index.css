@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.animated-text {
+  text-shadow: 0 1px #c3baba;
+}
+.animated-text span:after {
+  content: "Mazahir hussain";
+  animation: animate 6s infinite ease;
+}
+
+@keyframes animate {
+  0% {
+    content: "Mazahir hussain";
+  }
+  25% {
+    content: "Freelancer";
+  }
+  50% {
+    content: "Developer";
+  }
+  75% {
+    content: "Desighner";
+  }
+  100% {
+    content: "Web Developer";
+  }
+}
+
+p {
+  color: var(--gray-dark-600, #d1d5db);
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
